@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="canonical" href="coniasoft.com" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConiaSoft Accounting. Landing Page</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <meta name="theme-color" content="#ffffff">
+  <link href="/output.css" rel="stylesheet">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- splide css cdn -->
+  <!-- <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide-core.min.css"> -->
+  <link rel="stylesheet" href="/splide/dist/css/splide-core.min.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-200/80 font-poppins">
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[64px]'), list.classList.add('opacity-100')) :
+        (e.name = "menu", list.classList.remove('top-[64px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap" class="w-full relative">
+    <nav
+      class="fixed top-0 left-0 w-full z-30 duration-300 px-5 bg-white shadow md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <a class="navbar-brand inline-block mx-5" href="index.html">
+          <img class="w-16 h-16 md:w-16 md:h-16" src="images/logo.png" alt="Logo">
+        </a>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul class=" md:flex md:items-center z-[-10] md:z-auto md:static uppercase absolute bg-white w-full left-0
+             md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in
+             duration-500">
+        <li class="mx-3 my-2 md:my-0">
+          <a href="index.html"
+            class="text-lg py-2 pl-3 pr-4 hover:border hover:border-primary hover:rounded-lg hover:px-2 hover:py-2 hover:text-cyan-500 duration-500 text-primary">HOME</a>
+        </li>
+        <li class="mx-3 my-6 md:my-0">
+          <a class="text-lg py-2 pl-3 pr-4 hover:border hover:border-primary hover:rounded-lg hover:px-2 hover:py-2 hover:text-cyan-500 duration-500 text-primary whitespace-nowrap"
+            href="about.html">About Us</a>
+        </li>
+        <li class="mx-3 my-6 md:my-0">
+          <a class="text-lg py-2 pl-3 pr-4 hover:border hover:border-primary hover:rounded-lg hover:px-2 hover:py-2 hover:text-cyan-500 duration-500 text-primary"
+            href="#product">Product</a>
+        </li>
+        <li class="mx-3 my-6 md:my-0">
+          <a class="text-lg py-2 pl-3 pr-4 border border-primary rounded-lg px-2 hover:py-2 hover:text-cyan-500 duration-500 text-primary"
+            href="#">Pricing Plan</a>
+        </li>
+        <li class="mx-3 my-6 md:my-0">
+          <a class="text-lg  py-2 pl-3 pr-4 hover:border hover:border-primary hover:rounded-lg hover:px-2 hover:py-2 hover:text-cyan-500 duration-500 text-primary"
+            href="#gallery">Gallery</a>
+        </li>
+        <li class="mx-3 my-6 md:my-0">
+          <a class="text-lg py-2 pl-3 pr-4 hover:border hover:border-primary hover:rounded-lg hover:px-2 hover:py-2 hover:text-cyan-500 duration-500 text-primary"
+            href="contact.html">Contact</a>
+        </li>
+        <button class="md:ml-4 text-primary border border-secondary bg-secondary px-4 py-2 rounded-md duration-300 hover:bg-secondary
+                     hover:text-white" href="/auth/login.html">ACCOUNTANT
+        </button>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navbar End -->
+
+
+
+
+
+  <!-- Hero Section -->
+  <section>
+    <div class="relative">
+      <img src="/images/pricinghero.png" class="absolute inset-0  w-full h-auto object-cover" alt="" />
+      <div class="relative bg-opacity-90">
+        <div
+          class="relative mx-auto overflow-hidden px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
+          <div class="flex flex-col items-center justify-between xl:flex-row">
+            <div class="relative lg:mx-20  lg:mt-40 -md:mt-20">
+              <h1
+                class=" uppercase max-w-xl mb-4 text-white text-lg mt-3 lg:mt-0 lg:text-[32px] font-normal leading-none tracking-tight  ">
+                Start with our</h1>
+              <h1
+                class="  max-w-2xl mb-4 text-white text-[38px] lg:text-[48px] font-semibold leading-none tracking-tight uppercase">
+                Premium plans</h1>
+              <div class="h-24 w-full">
+                <p
+                  class=" max-w-2xl justify-normal w-full mb-6 font-normal text-xs pr-14 lg:pr-0 text-white lg:mb-8 md:text-xl lg:text-xl ">
+                  We have several powerful plans to showcase your business and get discovered as a creative
+                  entrepreneur. Everything you need. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section -->
+
+
+  <!-- Plan -->
+  <section class="text-slate-700 body-font lg:px-20 lg:pt-20 lg:mt-40">
+    <div class="flex justify-center text-center items-center">
+      <div class="flex flex-col w-full lg:w-1/2 ml-6 ">
+        <h2 class="lg:text-2xl font-normal text-primary">The Right Plan for Your Business</h2>
+        <h2 class="pt-3 lg:text-2xl font-extrabold text-primary">Price List – ConiaSoft ACCOUNTING</h2>
+        <p class="pt-3 text-primary/70 lg:leading-5 text-sm font-normal">We have several powerful plans to showcase your business and get discovered
+          as a creative entrepreneurs. Everything you need.</p>
+        <div class="block text-sm pt-5">
+          <input
+            class="ml-2 h-4 w-4 rounded border border-gray-300 bg-contain bg-no-repeat align-top text-black shadow checked:bg-blue-600 focus:border-blue-600 focus:shadow"
+            type="checkbox" id="remember-me" checked />
+          <label class="inline-block mr-2" for="remember-me">Bill Annualy</label>
+          <input
+            class="ml-2 h-4 w-4 rounded border border-gray-300 bg-contain bg-no-repeat align-top text-black shadow checked:bg-blue-600 focus:border-blue-600 focus:shadow"
+            type="checkbox" id="remember-me" />
+          <label class="inline-block h-4" for="remember-me">Bill Monthly</label>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- PLANS  -->
+  <section class="text-slate-700 body-font lg:px-20">
+    <div class="container px-5 py-6 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 w-full lg:w-1/3 h-[580px]">
+          <div class="flex flex-col h-full bg-[#F16623] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+              <div class="flex ">
+                <p class="font-bold top-5 justify-start my-4 text-4xl">License Fee</p>
+              </div>
+              <div class="h-full flex flex-col text-center items-center justify-center">
+                <p class="p-3 text-sm font-normal max-w-md">License Purchase Price</p>
+                <img src="images/priceline.svg" class="items-center justify-center"/>
+                <p class="p-3 text-sm font-normal max-w-md">License Purchase Price</p>
+              </div>
+
+            
+              <div class="w-full pb-10 px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <button
+                  class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-orange-600 shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">25,000 TL</button>
+              </div>
+
+          </div>
+        </div>
+        <div class="p-4 w-full lg:w-1/3 h-[580px]">
+          <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+              <div class="flex ">
+                <p class="font-bold top-5 justify-start my-4 text-4xl ">Basic</p>
+              </div>
+              <div class="pt-10 flex flex-col text-center items-center justify-start">
+                <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+              </div>
+              <div class="h-full flex flex-col text-center items-center justify-center">
+                <ul>
+                  <li class="px-3 pt-3text-sm font-normal max-w-md">1. Accounting features</li>
+                </ul>
+                
+              </div>
+
+              <div class=" w-full px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <p class="p-3 text-sm font-normal max-w-md">Coniasoft Cloud Storage:<span class="font-bold">100 GB</span></p>
+              </div>
+              <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <button
+                  class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">5,000 TL</button>
+              </div>
+
+          </div>
+        </div>
+
+        <div class="p-4 w-full lg:w-1/3 h-[580px]">
+          <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+              <div class="flex ">
+                <p class="font-bold top-5 justify-start my-4 text-4xl ">Premium</p>
+              </div>
+              <div class="pt-10 flex flex-col text-center items-center justify-start">
+                <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+              </div>
+              <div class="h-full flex flex-col text-center items-center justify-center">
+                <ul>
+                  <li class="px-3 pt-3 text-sm font-normal max-w-md">1. Accounting features</li>
+                  <li class="px-3 pt-3 text-sm font-normal max-w-md">2. Sales Management</li>
+                </ul>
+                
+              </div>
+
+              <div class=" w-full px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <p class="p-3 text-sm font-normal max-w-md">Coniasoft Cloud Storage: <span class="font-bold">250 GB</span></p>
+              </div>
+              <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <button
+                  class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">11,250 TL</button>
+              </div>
+
+          </div>
+        </div>
+
+        <div class="p-4 w-full lg:w-1/3 h-[580px]">
+          <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+              <div class="flex ">
+                <p class="font-bold top-5 justify-start my-4 text-4xl ">Platinum</p>
+              </div>
+              <div class="pt-10 flex flex-col text-center items-center justify-start">
+                <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+              </div>
+              <div class="h-full flex flex-col text-center items-center justify-center">
+                <ul>
+                  <li class="px-3 pt-3 text-sm font-normal max-w-md">1. Accounting features</li>
+                  <li class="px-3 pt-3 text-sm font-normal max-w-md">2. Sales Management</li>
+                  <li class="px-3 pt-3 text-sm font-normal max-w-md">3. Project Management</li>
+                </ul>
+                
+              </div>
+
+              <div class=" w-full px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <p class="p-3 text-sm font-normal max-w-md">Coniasoft Cloud Storage: <span class="font-bold">500 GB</span></p>
+              </div>
+              <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <button
+                  class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">22,500 TL</button>
+              </div>
+
+          </div>
+        </div>
+
+        <div class="p-4 w-full lg:w-1/3 h-[580px]">
+          <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+              <div class="flex ">
+                <p class="font-bold top-5 justify-start my-4 text-4xl ">Unlimited</p>
+              </div>
+           
+              <div class="pt-10 h-full flex flex-col text-center items-center justify-start">
+                <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+                
+              </div>
+
+        
+              <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                <button
+                  class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">5,000 TL</button>
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+      <h2 class="pt-5 lg:text-2xl font-normal text-primary">Prices are excluding VAT</h2>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- /End Plan -->
+
+
+    <!-- AI Price Plan -->
+    <section class="text-slate-700 body-font lg:px-20 lg:pt-20">
+      <div class="flex justify-center text-center items-center">
+        <div class="flex flex-col w-full lg:w-1/2 ml-6 ">
+          <h2 class="pt-3 lg:text-2xl font-extrabold text-primary">Price List – ConiaSoft ACCOUNTING AI Features</h2>
+          <p class="pt-3 text-primary/70 lg:leading-5 text-sm font-normal">We have several powerful plans to showcase your business and get discovered
+            as a creative entrepreneurs. Everything you need.</p>
+          <div class="block text-sm pt-5">
+            <input
+              class="ml-2 h-4 w-4 rounded border border-gray-300 bg-contain bg-no-repeat align-top text-black shadow checked:bg-blue-600 focus:border-blue-600 focus:shadow"
+              type="checkbox" id="remember-me" checked />
+            <label class="inline-block mr-2" for="remember-me">Bill Annualy</label>
+            <input
+              class="ml-2 h-4 w-4 rounded border border-gray-300 bg-contain bg-no-repeat align-top text-black shadow checked:bg-blue-600 focus:border-blue-600 focus:shadow"
+              type="checkbox" id="remember-me" />
+            <label class="inline-block h-4" for="remember-me">Bill Monthly</label>
+  
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  
+  
+    <!-- AI Price Plan  -->
+    <section class="text-slate-700 body-font lg:px-20">
+      <div class="container px-5 py-6 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 w-full lg:w-1/3 h-[580px]">
+            <div class="flex flex-col h-full bg-[#24A9E1] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+                <div class="flex ">
+                  <p class="font-bold top-5 justify-start my-4 text-4xl">License Fee</p>
+                </div>
+                <div class="h-full flex flex-col text-center items-center justify-center">
+                  <p class="p-3 text-sm font-normal max-w-md">License Purchase Price</p>
+                  <img src="images/priceline.svg" class="items-center justify-center"/>
+                  <p class="p-3 text-sm font-normal max-w-md">License Purchase Price</p>
+                </div>
+  
+              
+                <div class="w-full pb-10 px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <button
+                    class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#24A9E1] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">40,000 TL</button>
+                </div>
+  
+            </div>
+          </div>
+          <div class="p-4 w-full lg:w-1/3 h-[580px]">
+            <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+                <div class="flex ">
+                  <p class="font-bold top-5 justify-start my-4 text-4xl ">Basic</p>
+                </div>
+                <div class="pt-10 flex flex-col text-center items-center justify-start">
+                  <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+                </div>
+                <div class="h-full flex flex-col text-left items-center justify-center">
+                  <ul>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">1. Accounting features</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">2. Sales Management</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">3. Project Management</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">4. Basic AI Features</li>
+                  </ul>
+                  
+                </div>
+  
+                <div class=" w-full px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <p class="p-3 text-sm font-normal max-w-md">Coniasoft Cloud Storage:<span class="font-bold">100 GB</span></p>
+                </div>
+                <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <button
+                    class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">10,000 TL</button>
+                </div>
+  
+            </div>
+          </div>
+  
+          <div class="p-4 w-full lg:w-1/3 h-[580px]">
+            <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+                <div class="flex ">
+                  <p class="font-bold top-5 justify-start my-4 text-4xl ">Premium</p>
+                </div>
+                <div class="pt-10 flex flex-col text-center items-center justify-start">
+                  <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+                </div>
+                <div class="h-full flex flex-col text-center items-center justify-center">
+                  <ul>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">1. Accounting features</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">2. Sales Management</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">3. Project Management</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">4. Premium AI Features</li>
+                  </ul>
+                  
+                </div>
+  
+                <div class=" w-full px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <p class="p-3 text-sm font-normal max-w-md">Coniasoft Cloud Storage: <span class="font-bold">250 GB</span></p>
+                </div>
+                <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <button
+                    class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">27,000 TL</button>
+                </div>
+  
+            </div>
+          </div>
+  
+          <div class="p-4 w-full lg:w-1/3 h-[580px]">
+            <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+                <div class="flex ">
+                  <p class="font-bold top-5 text-center justify-start my-4 text-4xl ">Platinum Custom Coding</p>
+                </div>
+                <div class="pt-10 flex flex-col text-center items-center justify-start">
+                  <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+                </div>
+                <div class="h-full flex flex-col text-left items-center justify-center">
+                  <ul>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">1. Accounting features</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">2. Sales Management</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">3. Project Management</li>
+                    <li class="px-3 pt-3 text-sm font-normal max-w-md">4. Client Requested </li>
+                      <li class="pl-7 text-sm font-normal max-w-md">Basic Coding </li>
+                      <li class="pl-7 text-sm font-normal max-w-md">AI Features</li>
+                  </ul>
+                  
+                </div>
+  
+                <div class=" w-full px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <p class="p-3 text-sm font-normal max-w-md">Coniasoft Cloud Storage: <span class="font-bold">500 GB</span></p>
+                </div>
+                <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <button
+                    class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">Price upon request</button>
+                </div>
+  
+            </div>
+          </div>
+  
+          <div class="p-4 w-full lg:w-1/3 h-[580px]">
+            <div class="flex flex-col h-full bg-[#1EB089] text-black items-center  px-8 pt-5  rounded-[24px] overflow-hidden  relative">
+                <div class="flex ">
+                  <p class="font-bold top-5 text-center justify-start my-4 text-4xl ">Unlimited Custom Coding</p>
+                </div>
+             
+                <div class="pt-10 h-full flex flex-col text-center items-center justify-start">
+                  <p class="p-3 text-sm font-normal max-w-md">Annual Update Fee Inclusive</p>
+                  
+                </div>
+  
+                
+                <div class="w-full pb-10  px-2 flex place-items-center items-center place-content-center justify-center md:px-0">
+                  <button
+                    class="mx-2 h-16 w-full rounded-lg bg-orange-100 px-4 py-2 text-center text-base font-semibold text-[#1EB089] shadow-md outline-none ring-blue-500 ring-offset-2 transition hover:bg-orange-400 focus:ring-2 ">Price upon request</button>
+                </div>
+  
+            </div>
+          </div>
+  
+        </div>
+        <h2 class="pt-5 lg:text-2xl font-normal text-primary">Prices are excluding VAT</h2>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- /End AI Price Plan -->
+
+  <div class="mt-20">
+
+  </div>
+
+
+  <!-- ====== Footer Section Start -->
+  <footer class="relative z-10 bg-primary text-white pt-20 pb-10 md:px-12 lg:pt-[120px] lg:pb-20">
+    <div class="container mx-auto px-6 lg:px-2">
+      <div class="-mx-4 flex md:mx-4 flex-wrap">
+        <div class="w-full md:mx-5 px-4 sm:w-2/3 lg:w-3/12 p-3">
+          <div class="mb-10 w-full">
+
+            <div class="mb-6 flex h-46 items-center space-x-2">
+              <img class="h-full w-full object-contain" src="/images/map.png" alt="" />
+            </div>
+            <p class="font-medium my-4 text-lg ">HEAD OFFICE</p>
+            <div class="my-6">
+              <a href="#" class="mt-3 flex cursor-pointer items-center">
+                <img class="w-6 h-auto max-w-full align-middle" src="./images/home.png" alt="" />
+                <span class="px-3 text-sm font-light max-w-md">123 Eccles old road, Salford Road,<br>East london, UK,
+                  M6
+                  7A4</span>
+              </a>
+
+              <a href="#" class="mt-3 flex cursor-pointer items-center">
+                <img class="h-6 w-auto max-w-full align-middle" src="./images/mail.png" alt="" />
+                <span class="px-3 text-sm font-light">Support@yourdomian.com</span>
+              </a>
+
+              <a href="#" class="mt-3 flex cursor-pointer items-center">
+                <img class="h-6 w-auto max-w-full align-middle" src="./images/phone.png" alt="" />
+                <span class="px-3 text-sm font-light">+44 123 456 789-9</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-[20%]">
+          <div class="mb-10 w-full">
+            <h4 class="text-dark  text-lg font-semibold">Useful Links</h4>
+            <img class="h-auto w-auto max-w-full align-middle mb-4" src="./images/Divider.png" alt="" />
+
+            <ul>
+              <li class="flex items-center flex-wrap flex-row">
+                <img class="h-6 w-auto max-w-full align-middle" src="./images/cheveron-right.png" alt="" />
+                <a href="javascript:void(0)"
+                  class="text-body-color hover:text-gray-100 inline-block text-sm leading-loose">
+                  Wealth Planning
+                </a>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+
+              <li class="flex items-center flex-wrap flex-row">
+                <img class="h-6 w-auto max-w-full align-middle" src="./images/cheveron-right.png" alt="" />
+                <a href="javascript:void(0)"
+                  class="text-body-color hover:text-gray-100 inline-block text-sm leading-loose">
+                  Investment Management
+                </a>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+              <li class="flex items-center flex-wrap flex-row">
+                <img class="h-6 w-auto max-w-full align-middle" src="./images/cheveron-right.png" alt="" />
+                <a href="javascript:void(0)"
+                  class="text-body-color hover:text-gray-100 inline-block  text-sm leading-loose">
+                  Year-End Tax Planning
+                </a>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+              <li class="flex items-center flex-wrap flex-row">
+                <img class="h-6 w-auto max-w-full align-middle" src="./images/cheveron-right.png" alt="" />
+                <a href="javascript:void(0)"
+                  class="text-body-color hover:text-gray-100 inline-block  text-sm leading-loose">
+                  Tax Advisory Services
+                </a>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+              <li class="flex items-center flex-wrap flex-row">
+                <img class="h-6 w-auto max-w-full align-middle" src="./images/cheveron-right.png" alt="" />
+                <a href="javascript:void(0)"
+                  class="text-body-color hover:text-gray-100 inline-block  text-sm leading-loose">
+                  Small Business Taxes
+                </a>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+
+            </ul>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+          <div class="mb-10 w-full">
+            <h4 class="text-dark text-lg font-semibold">RECENT NEWS</h4>
+            <img class="h-auto w-auto max-w-full align-middle mb-4" src="./images/Divider.png" alt="" />
+
+            <ul>
+              <li>
+                <a href="#" class="mt-5 flex cursor-pointer items-center">
+                  <img class="h-10 w-auto max-w-full align-middle" src="./images/date.png" alt="" />
+                  <span class="px-3 text-sm">Need more effort to pay manually one by
+                    one,...</span>
+
+                </a>
+                <div class="flex cursor-pointer items-center ml-14">
+                  <img class="h-3 w-auto max-w-full align-middle" src="./images/clock-three 1.png" alt="" />
+                  <span class="ml-3 text-sm">24 minutes ago</span>
+                </div>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+
+              <li>
+                <a href="#" class="mt-5 flex cursor-pointer items-center">
+                  <img class="h-10 w-auto max-w-full align-middle" src="./images/date.png" alt="" />
+                  <span class="px-3 text-sm">Need more effort to pay manually one by
+                    one,...</span>
+
+                </a>
+                <div class="flex cursor-pointer items-center ml-14">
+                  <img class="h-3 w-auto max-w-full align-middle" src="./images/clock-three 1.png" alt="" />
+                  <span class="ml-3 text-sm">24 minutes ago</span>
+                </div>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+
+              <li>
+                <a href="#" class="mt-5 flex cursor-pointer items-center">
+                  <img class="h-10 w-auto max-w-full align-middle" src="./images/date.png" alt="" />
+                  <span class="px-3 text-sm">Need more effort to pay manually one by
+                    one,...</span>
+
+                </a>
+                <div class="flex cursor-pointer items-center ml-14">
+                  <img class="h-3 w-auto max-w-full align-middle" src="./images/clock-three 1.png" alt="" />
+                  <span class="ml-3 text-sm">24 minutes ago</span>
+                </div>
+
+              </li>
+              <img class="h-auto w-auto max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+
+            </ul>
+          </div>
+        </div>
+        <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+          <div class="mb-10 w-full">
+            <h4 class="text-dark text-lg font-semibold">FLICKR WIDGET</h4>
+            <img class="h-auto w-auto max-w-full align-middle mb-4" src="./images/Divider.png" alt="" />
+            <div class="gird grid-cols-5 grid-rows-2 gap-4">
+              <img src="./images/footer.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="h-auto w-full max-w-full align-middle mb-2 py-2" src="./images/Divider.png" alt="" />
+
+      <div class="-mx-4 flex md:mx-4 w-full flex-wrap lg:flex-row flex-col items-center justify-between px-4">
+
+        <div class="flex lg:space-x-6 md:px-5 flex-row text-center">
+          <p class="font-regular text-[18px] leading-2">Privacy Policy &nbsp;|</p>
+          <p class="font-regular text-[18px] leading-2">Terms & Conditions &nbsp;|</p>
+          <p class="font-regular text-[18px] leading-2">Cookies Policy</p>
+
+        </div>
+        <div class="flex mt-10 lg:mt-0  items-center space-x-6">
+          <a href="#"><img src="images/Facebook.png" alt=" facebook logo" class="w-6 "></a>
+          <a href="#"><img src="images/Twitter.png" alt=" facebook logo" class="w-6"></a>
+          <a href="#"><img src="images/Instagram.png" alt=" facebook logo" class="w-6"></a>
+          <a href="#"><img src="images/LinkedIN.png" alt=" facebook logo" class="w-6"></a>
+        </div>
+
+      </div>
+
+    </div>
+    <div>
+      <span class="absolute left-0 bottom-0 z-[-1]">
+        <svg width="217" height="229" viewBox="0 0 217 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
+            fill="url(#paint0_linear_1179_5)" />
+          <defs>
+            <linearGradient id="paint0_linear_1179_5" x1="76.5" y1="281" x2="76.5" y2="1.22829e-05"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3056D3" stop-opacity="0.08" />
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="absolute top-10 right-10 z-[-1]">
+        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
+            fill="url(#paint0_linear_1179_4)" />
+          <defs>
+            <linearGradient id="paint0_linear_1179_4" x1="-1.63917e-06" y1="37.5" x2="75" y2="37.5"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#13C296" stop-opacity="0.31" />
+              <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+    </div>
+  </footer>
+  <!-- ====== Footer Section End -->
+
+  </main>
+
+  <!-- / Footer -->
+  <!-- <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script> -->
+  <script src="/splide/dist/js/splide.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#splider1', {
+        type: 'loop',
+        drag: 'free',
+        perPage: 3,
+        perMove: 1,
+        gap: '2rem',
+        snap: true,
+        autoPlay: true,
+        breakpoints: {
+          1020: {
+            perPage: 2,
+            gap: '.7rem',
+          },
+          768: {
+            perPage: 2,
+            gap: '.7rem',
+          },
+          480: {
+            perPage: 1,
+            gap: '.7rem',
+          },
+        },
+      }).mount();
+      new Splide('#splider2', {
+        type: 'loop',
+        drag: 'free',
+        perPage: 5,
+        perMove: 1,
+        gap: '.7rem',
+        snap: true,
+        autoPlay: true,
+        breakpoints: {
+          1020: {
+            perPage: 3,
+          },
+          768: {
+            perPage: 2,
+          },
+          480: {
+            perPage: 1,
+          },
+        },
+      }).mount()
+      new Splide('#splider3', {
+        type: 'loop',
+        drag: 'free',
+        perPage: 1,
+        perMove: 1,
+        // gap: '2rem',
+        snap: true,
+        autoPlay: true,
+      }).mount()
+
+      new Splide('#splider4', {
+        type: 'loop',
+        drag: 'free',
+        perPage: 4,
+        perMove: 1,
+        gap: '.7rem',
+        snap: true,
+        autoPlay: true,
+        breakpoints: {
+          768: {
+            perPage: 2,
+          },
+          480: {
+            perPage: 1,
+          },
+        },
+      }).mount()
+    })
+  </script>
+</body>
+
+</html>
