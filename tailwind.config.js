@@ -12,9 +12,17 @@ module.exports = {
         text_primary: "#696D70",
         primary: "#004181",
         // primarylight: "#004181",
-       secondary: "#2B1A82",
       //  secondarylight: "#004181",
-      colorBlack: "#071625"
+      colorBlack: "#071625",
+      button: "#F16021",
+      home_bg: "#131212",
+      transparent: 'transparent',
+				current: 'currentColor',
+				white: '#ffffff',
+				secondary: '#F16021',
+				text: '#696D70',
+				title: '#7B8EA9',
+				background: '#131212',
       
       }
     },
